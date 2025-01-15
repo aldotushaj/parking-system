@@ -46,6 +46,8 @@
             this.paidBut = new System.Windows.Forms.Button();
             this.receiptnoTB = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -201,6 +203,16 @@
             this.receiptnoTB.TabIndex = 20;
             this.receiptnoTB.Text = "0000";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(83, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form3
             // 
             this.AcceptButton = this.paidBut;
@@ -208,6 +220,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.paidBut;
             this.ClientSize = new System.Drawing.Size(348, 413);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.receiptnoTB);
             this.Controls.Add(this.paidBut);
             this.Controls.Add(this.amountLabel);
@@ -227,6 +240,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.Text = "Receipt";
+            this.Load += new System.EventHandler(this.Form3_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,5 +265,6 @@
         private System.Windows.Forms.Button paidBut;
         private System.Windows.Forms.TextBox receiptnoTB;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

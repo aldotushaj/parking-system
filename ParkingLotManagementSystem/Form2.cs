@@ -84,7 +84,7 @@ namespace ParkingLotManagementSystem
                     /// Changes the color of the whole row to Green-Yellow
                     for (int j = 0; j <= 6; j++)
                     {
-                        dataTable.Rows[n].Cells[j].Style.BackColor = Color.GreenYellow;
+                        dataTable.Rows[n].Cells[j].Style.BackColor = Color.LightGreen;
                     }
                 }
                 else
@@ -132,7 +132,7 @@ namespace ParkingLotManagementSystem
                         ///     20$ - per succeding hour (after the 3 hours)
                         if (numHours > 0)
                         {
-                            if (duration / 60 <= 0.25)
+                            if (numHours <= 0.25)
                             {
                                 costTB.Text = "$" + 0;
                             }
@@ -236,8 +236,8 @@ namespace ParkingLotManagementSystem
             /// Computes for the cost based on the parking duration of the vehicle
             ///     Follows the pricing:
             ///     free - less than 15 minutes
-            ///     50php - first 3 hours
-            ///     20php - per succeding hour (after the 3 hours)
+            ///     50$ - first 3 hours
+            ///     20$ - per succeding hour (after the 3 hours)
             if (numHours > 0)
             {
                 if (duration / 60 <= 0.25)
@@ -389,6 +389,11 @@ namespace ParkingLotManagementSystem
         }
 
         private void licenseTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

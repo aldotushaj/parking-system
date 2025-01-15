@@ -76,7 +76,7 @@
             // 
             // vehicleinTB
             // 
-            this.vehicleinTB.BackColor = System.Drawing.Color.PaleGreen;
+            this.vehicleinTB.BackColor = System.Drawing.Color.LightGreen;
             this.vehicleinTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vehicleinTB.Location = new System.Drawing.Point(146, 383);
             this.vehicleinTB.Name = "vehicleinTB";
@@ -331,7 +331,7 @@
             // 
             // updateBut
             // 
-            this.updateBut.BackColor = System.Drawing.Color.LightCoral;
+            this.updateBut.BackColor = System.Drawing.Color.Tomato;
             this.updateBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBut.Location = new System.Drawing.Point(146, 480);
             this.updateBut.Name = "updateBut";
@@ -380,7 +380,7 @@
             // 
             this.occupiedLabel.AutoSize = true;
             this.occupiedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.occupiedLabel.ForeColor = System.Drawing.Color.DarkOrange;
+            this.occupiedLabel.ForeColor = System.Drawing.Color.SeaGreen;
             this.occupiedLabel.Location = new System.Drawing.Point(624, 80);
             this.occupiedLabel.Name = "occupiedLabel";
             this.occupiedLabel.Size = new System.Drawing.Size(174, 91);
@@ -411,12 +411,13 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(321, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(298, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(234, 89);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // attendantLabel
             // 
