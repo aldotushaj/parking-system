@@ -22,6 +22,7 @@ namespace ParkingLotManagementSystem
         public Form2()
         {
             InitializeComponent();
+   
         }
         public void ab(string a)
         {
@@ -138,11 +139,11 @@ namespace ParkingLotManagementSystem
                             }
                             else if (numHours <= 3 && numHours > 0.25)
                             {
-                                costTB.Text = "$" + 50;
+                                costTB.Text = "$" + 2;
                             }
                             else if (numHours > 3)
                             {
-                                price = 50 + ((int)Math.Ceiling(numHours) - 3) * 20;
+                                price = 2 + ((int)Math.Ceiling(numHours) - 3) * 1;
                                 costTB.Text = "$" + price;
                             }
 
@@ -236,8 +237,8 @@ namespace ParkingLotManagementSystem
             /// Computes for the cost based on the parking duration of the vehicle
             ///     Follows the pricing:
             ///     free - less than 15 minutes
-            ///     50$ - first 3 hours
-            ///     20$ - per succeding hour (after the 3 hours)
+            ///     2$ - first 3 hours
+            ///     1$ - per succeding hour (after the 3 hours)
             if (numHours > 0)
             {
                 if (duration / 60 <= 0.25)
@@ -246,11 +247,11 @@ namespace ParkingLotManagementSystem
                 }
                 else if (numHours <= 3 && numHours > 0.25)
                 {
-                    costTB.Text = "$" + 50;
+                    costTB.Text = "$" + 2;
                 }
                 else if (numHours > 3)
                 {
-                    price = 50 + ((int)Math.Ceiling(numHours) - 3) * 20;
+                    price = 2 + ((int)Math.Ceiling(numHours) - 3) * 1;
                     costTB.Text = "$" + price;
                 }
 
@@ -282,7 +283,7 @@ namespace ParkingLotManagementSystem
 
                 /// Limits the deletion of rows to only vehicles that have not parked/paid
                 /// The purpose for the delete button is to correct mistakes only, not to remove any rows the attendant wishes to
-                if (time<=15)
+                if (time<=15 )
                 {
                     available = available + 1;
                     occupied = occupied - 1;
